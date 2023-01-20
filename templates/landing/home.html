@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="section-top" style="margin-bottom: 20px">
+        <img src="{% static 'img/slider0.jpg' %}" class="img-fluid">
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                {% for products_image in products_images%}
+                <div class="col-lg-3">
+                    <div class="product-item">
+                        <div>
+                            <img src="{{products_image.image.url}}" class="img-fluid">
+                        </div>
+                        <h4>{{ products_image.product.name}}</h4>
+                        <p>
+                            {{ products_image.product.description|truncatechars_html:50 }}
+                        </p>
+                        <div>
+                            {{ products_image.product.price}} UAH
+                        </div>
+                        <div class="add-to-card-btn">
+                            <div class="btn btn-success">
+                                Add to card
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
