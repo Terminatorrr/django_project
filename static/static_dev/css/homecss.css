@@ -1,0 +1,75 @@
+html,body{
+    height: 100%;
+    max-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: #edeef0;
+}
+
+.section-top{
+
+}
+
+.discount-container{
+    position: absolute;
+    top: 25%;
+    background: #28c728;
+    width: 30%;
+    color: white;
+    font-weight: 800;
+    padding: 3px;
+}
+
+.product-item{
+    height: 650px;
+    background: white;
+    border: 1px solid lightgray;
+    position: relative;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-to-card-btn{
+    position: absolute;
+    bottom: 15px;
+    left: 29%;
+}
+
+.img-height{
+    max-width: 100%;
+    max-height: 250px;
+    height: auto;
+}
+
+.img-container{
+    height: 250px;
+    justify-content: center;
+}
+
+.section-delivery{
+    height: 300px;
+    background-color: lightskyblue;
+    text-align: center;
+    color: white;
+}
+
+.wraper-content{
+    overflow: auto;
+    padding-bottom: 180px;
+}
+.footer{
+    position: relative;
+    margin-top: -180px;
+    height: 180px;
+    clear: both;
+    background-color: white;
+}
+
+.product-description-tabs{
+    padding: 10px;
+}
+
+.image-prod-item{
+    padding: 5px;
+    margin-bottom: 10px;
+}

@@ -7,7 +7,7 @@
     padding-top: 15% ;
 }
 .general-container{
-    background: url("img/bg_image.jpg");
+    background: url("../img/bg_image.jpg");
     height: 100%;
 
 }
@@ -45,3 +45,4 @@
     background: gray;
     position: relative;
 }
+

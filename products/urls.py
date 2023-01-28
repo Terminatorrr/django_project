@@ -1,8 +1,8 @@
 from django.conf.urls import include
 from django.contrib import admin
 from django.urls import path, re_path
-from landing import views
+from products import views
 
 urlpatterns = [
-    # re_path(r'^landing123/', views.landing, name='landing'),
+    re_path(r'^product/(?P<product_id>\w+)/$', views.product, name='product'),
 ]
