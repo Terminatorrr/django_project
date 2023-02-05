@@ -73,3 +73,22 @@ html,body{
     padding: 5px;
     margin-bottom: 10px;
 }
+
+.marg-right{
+    margin-left: 500PX;
+}
+
+.basket-container{
+    position: relative;
+    right: 150px;
+    width: 100px;
+ }
+
+
+.basket-item {
+    position: absolute;
+    top: 40px;
+    width: 400px;
+    background: lightblue;
+    z-index: 10;
+}

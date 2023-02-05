@@ -39,7 +39,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
-                        <form id = "form_buying_product" >
+                        <form id = "form_buying_product" action="{% url 'basket_adding' %}">{% csrf_token %}
                             <input type="number" min="1" id="quanty" class="form-control">
                         </form>
                     </div>
@@ -47,6 +47,8 @@
                         <button type="submit"
                             data-product-id="{{ product.id }}"
                             data-product-name="{{ product.name }}"
+                            data-product-price="{{ product.price }}"
+                            data-product-img="{{ product.productimage.0.image.url}}"
                         id="submit-btn-product" class="btn btn-success btn-buy"
                         >
                             Buy
